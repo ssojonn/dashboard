@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <style lang="sass">
+      @import "./scss/main.scss";
+    </style>
+  </head>
+  <body>
+
+    <main>
+      <header>
+        <div class="logo">
+          <button class="sidebar-open">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
+          <img class="logo-lg" src="./images/logo.png" alt="logo">
+          <img class="logo-sm" src="./images/logo-sm.png" alt="logo">
+        </div>
+        <div class="nav-search">
+          <div class="search">
+            <img src="./images/search-icon.png" alt="">
+            <input type="text" placeholder="Search Files...">
+          </div>
+          <select name="select">
+            <option value="1">Filter</option>
+            <option value="1">option 1</option>
+            <option value="1">option 2</option>
+            <option value="1">option 3</option>
+          </select>
+          
+          <button class="search-button">
+            <img src="./images/search-icon.png" alt="">
+          </button>
+        </div>
+        <div class="nav-end">
+          <button class="bell"><img src="./images/bell-icon.png" alt=""></button>
+          <button class="user">
+            <img class="profile-image" src="./images/profile-image.png" alt="">
+            <div>
+              <span>hrk</span>
+              <span>hrk041999@gmail.com</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="arrow" viewBox="0 0 16 16">
+              <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <div class="sidebar-overlay"></div>
+
+      <section class="main-section">
+        <div class="sidebar">
+          <button class="sidebar-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg>
+          </button>
+          <div class="sidebar-inner">
+            <div class="sidebar-links">
+              <div class="sidebar-link">
+                <a href="#">
+                  <img src="./images/home.png" alt="icon">
+                  <span>Home</span>
+                </a>
+              </div>
+              <div class="sidebar-link">
+                <a href="#">
+                  <img src="./images/app.png" alt="icon">
+                  <span>All Files</span>
+                </a>
+              </div>
+              <div class="sidebar-link">
+                <a href="#">
+                  <img src="./images/favorites.png" alt="icon">
+                  <span>Favorites</span>
+                </a>
+              </div>
+              <div class="sidebar-link">
+                <a href="#">
+                  <img src="./images/shared.png" alt="icon">
+                  <span>Shared</span>
+                </a>
+              </div>
+              <div class="sidebar-link">
+                <a href="#">
+                  <img src="./images/home.png" alt="icon">
+                  <span>Home</span>
+                </a>
+              </div>
+              <div class="sidebar-link">
+                <a href="#">
+                  <img src="./images/app.png" alt="icon">
+                  <span>All Files</span>
+                </a>
+              </div>
+              <div class="sidebar-link">
+                <a href="#">
+                  <img src="./images/favorites.png" alt="icon">
+                  <span>Favorites</span>
+                </a>
+              </div>
+              <div class="sidebar-link">
+                <a href="#">
+                  <img src="./images/shared.png" alt="icon">
+                  <span>Shared</span>
+                </a>
+              </div>
+            </div>
+  
+            <div class="sidebar-info">
+              <h4>25.32 GB used</h4>
+              <p>79% used - 6.64 GB free</p>
+  
+              <div class="slider">
+                <div class="slider-inner"></div>
+              </div>
+  
+              <a href="#" class="button">Add More Space</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+
+          <div class="info-block-overflow">
+            <div class="info-blocks">
+              <div class="info-block-item">
+                <div class="icons">
+                  <img src="./images/folder-1.png" alt="folder">
+                  <img src="./images/info-icon.png" alt="folder">
+                </div>
+                <h3>Design</h3>
+                <div class="folder-status">
+                  <span>17 files</span>
+                  <span>12 GB</span>
+                </div>
+              </div>
+              <div class="info-block-item">
+                <div class="icons">
+                  <img src="./images/folder-2.png" alt="folder">
+                  <img src="./images/info-icon.png" alt="folder">
+                </div>
+                <h3>Documents</h3>
+                <div class="folder-status">
+                  <span>17 files</span>
+                  <span>12 GB</span>
+                </div>
+              </div>
+              <div class="info-block-item">
+                <div class="icons">
+                  <img src="./images/folder-3.png" alt="folder">
+                  <img src="./images/info-icon.png" alt="folder">
+                </div>
+                <h3>Music</h3>
+                <div class="folder-status">
+                  <span>1,200 files</span>
+                  <span>12 GB</span>
+                </div>
+              </div>
+              <div class="info-block-item">
+                <div class="icons">
+                  <img src="./images/folder-4.png" alt="folder">
+                  <img src="./images/info-icon.png" alt="folder">
+                </div>
+                <h3>Images</h3>
+                <div class="folder-status">
+                  <span>270 files</span>
+                  <span>12 GB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="media">
+            <h3>Quick Access</h3>
+
+            <div class="media-items">
+              <div class="media-item">
+                <img class="media-image" src="./images/media-1.png" alt="">
+                <div class="media-info">
+                  <img src="./images/image.png" alt="">
+                  <div>
+                    <p class="filename">Building Image<span class="fileext">.jpeg</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="media-item">
+                <img class="media-image" src="./images/media-2.png" alt="">
+                <div class="media-info">
+                  <img src="./images/play.png" alt="">
+                  <div>
+                    <p class="filename">Product Video<span class="fileext">.jpeg</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="media-item">
+                <img class="media-image" src="./images/media-3.png" alt="">
+                <div class="media-info">
+                  <img src="./images/pdf.png" alt="">
+                  <div>
+                    <p class="filename">Customers<span class="fileext">.jpeg</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column">
+              <div class="recently-uploaded">
+                <h3>Recently Uploaded</h3>
+
+                <div class="list-item">
+                  <img src="./images/recently-uploaded/1.png" alt="">
+                  <div class="list-item-info">
+                    <div>
+                      <h4>Marcus Family.jpg</h4>
+                      <small>10 oct, 10:23pm</small>
+                    </div>
+                    <p class="file-meta">12MB</p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <img src="./images/recently-uploaded/2.png" alt="">
+                  <div class="list-item-info">
+                    <div>
+                      <h4>Marcus Family.jpg</h4>
+                      <small>10 oct, 10:23pm</small>
+                    </div>
+                    <p class="file-meta">12MB</p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <img src="./images/recently-uploaded/3.png" alt="">
+                  <div class="list-item-info">
+                    <div>
+                      <h4>Marcus Family.jpg</h4>
+                      <small>10 oct, 10:23pm</small>
+                    </div>
+                    <p class="file-meta">12MB</p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <img src="./images/recently-uploaded/4.png" alt="">
+                  <div class="list-item-info">
+                    <div>
+                      <h4>Marcus Family.jpg</h4>
+                      <small>10 oct, 10:23pm</small>
+                    </div>
+                    <p class="file-meta">12MB</p>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <img src="./images/recently-uploaded/5.png" alt="">
+                  <div class="list-item-info">
+                    <div>
+                      <h4>Marcus Family.jpg</h4>
+                      <small>10 oct, 10:23pm</small>
+                    </div>
+                    <p class="file-meta">12MB</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="file-manager">
+                <div class="heading">
+                  <h3>File Manager</h3>
+                  <img src="./images/file-manager/more.png" alt="">
+                </div>
+
+                <div class="file-manager-items">
+                  <div class="file-manager-item">
+                    <img src="public/images/file-manager/files-icon.png" alt="">
+                    <h4>My Folder</h4>
+                    <small>created Jun 23, 2020</small>
+                  </div>
+                  <div class="file-manager-item">
+                    <img src="public/images/file-manager/pdf.png" alt="">
+                    <h4>Aggreement.pdf</h4>
+                    <small>created Jun 23, 2020</small>
+                  </div>
+                  <div class="file-manager-item">
+                    <img src="public/images/file-manager/files-icon.png" alt="">
+                    <h4>Other Folder</h4>
+                    <small>created Jun 23, 2020</small>
+                  </div>
+                  <div class="file-manager-item">
+                    <img src="public/images/file-manager/pdf.png" alt="">
+                    <h4>Blueprints</h4>
+                    <small>created Jun 23, 2020</small>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="right-sidebar">
+          <div class="block">
+            <h3>Usage Stats</h3>
+            <img class="graph" src="public/images/graph.png" alt="">
+          </div>
+          <div class="block">
+            <h3>Shared Folders</h3>
+
+            <div class="list-item">
+              <img src="./images/shared-folders.png" alt="">
+              <div class="list-item-info">
+                <div>
+                  <h4>Sketch Files</h4>
+                  <small>Shared with: mike@getnextdesign.com</small>
+                </div>
+                <p class="file-meta">10 oct, 10:23pm</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <img src="./images/shared-folders.png" alt="">
+              <div class="list-item-info">
+                <div>
+                  <h4>AutoCad Drawings</h4>
+                  <small>Shared with: mike@getnextdesign.com</small>
+                </div>
+                <p class="file-meta">10 oct, 10:23pm</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <img src="./images/shared-folders.png" alt="">
+              <div class="list-item-info">
+                <div>
+                  <h4>Master Speardsheets</h4>
+                  <small>Shared with: mike@getnextdesign.com</small>
+                </div>
+                <p class="file-meta">10 oct, 10:23pm</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <img src="./images/shared-folders.png" alt="">
+              <div class="list-item-info">
+                <div>
+                  <h4>Design Comps</h4>
+                  <small>Shared with: mike@getnextdesign.com</small>
+                </div>
+                <p class="file-meta">10 oct, 10:23pm</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <img src="./images/shared-folders.png" alt="">
+              <div class="list-item-info">
+                <div>
+                  <h4>Final Revisions</h4>
+                  <small>Shared with: mike@getnextdesign.com</small>
+                </div>
+                <p class="file-meta">10 oct, 10:23pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+header {
+  display: flex;
+  width: 100%;
+  padding: 22px 30px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #F6F6F6;
+  @include tablet {
+    padding: 30px 15px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    .logo-sm {
+      display: none;
+      @include tablet {
+        display: block;
+      }
+    }
+    .logo-lg {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    .sidebar-open {
+      display: none;
+      padding: 8px;
+      border: 2px solid #eee;
+      border-radius: 8px;
+      margin-right: 15px;
+      cursor: pointer;
+      @include desktop {
+        display: block;
+      }
+      svg {
+        vertical-align: bottom;
+      }
+    }
+  }
+
+  .nav-search {
+    display: flex;
+    align-items: center;
+    @include desktop {
+      margin-left: auto;
+      margin-right: 30px;
+    }
+    .search {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      width: 460px;
+      @include desktop-lg {
+        width: auto;
+      }
+      @include desktop {
+        display: none;
+      }
+      img {
+        margin-right: 15px;
+      }
+    }
+    input {
+      border: 0;
+      outline: 0;
+      height: 50px;
+      width: 100%;
+      font-size: 16px;
+    }
+    select {
+      font-size: 16px;
+      width: 160px;
+      padding: 0 20px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      height: 50px;
+      margin-left: 15px;
+      outline: 0;
+      appearance: none;
+      background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") no-repeat right 20px center;
+      background-size: 12px;
+      cursor: pointer;
+      @include desktop {
+        display: none;
+      }
+    }
+    .search-button {
+      display: none;
+      @include desktop {
+        display: block;
+      }
+      @include tablet {
+        img {
+          height: 18px;
+        }
+      }
+    }
+  }
+
+  .nav-end {
+    display: flex;
+    align-items: center;
+    .bell {
+      margin-right: 30px;
+      cursor: pointer;
+      @include tablet {
+        img {
+          height: 20px;
+        }
+      }
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      > div {
+        margin-left: 12px;
+        @include mobile-xs {
+          display: none;
+        }
+      }
+      .arrow {
+        display: none;
+        @include mobile-xs {
+          display: block;
+        }
+      }
+      @include mobile-xs {
+        background-color: #eee;
+        border-radius: 100px;
+        padding: 4px;
+        padding-right: 4px;
+        .profile-image {
+          height: 36px;
+        }
+      }
+      span {
+        display: block;
+        text-align: left;
+        &:first-child {
+          font-weight: 600;
+        }
+        &:last-child {
+          @include desktop {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

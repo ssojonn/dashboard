@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap');
+
+$primary: #FF5400;
+$secondary: #70baff;
+$font-primary: 'DM Sans', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
+
+body {
+  color: #25396F;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  transition: .3s;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.button {
+  background-color: #51459E;
+  border-radius: 14px;
+  position: relative;
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+  text-align: center;
+  z-index: 2;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    background-color: #CFC8FF;
+    transition: .3s;
+    border-radius: inherit;
+    z-index: -2;
+  }
+  &::before {
+    background-color: #51459E;
+    z-index: -1;
+    bottom: 0;
+    border-radius: 0;
+  }
+  &:hover::before,
+  &:hover {
+    background-color: #3A2F8F;
+  }
+}
