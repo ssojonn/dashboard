@@ -22,4 +22,4 @@ npm run dev
 
 Developed by [@ssojonn](https://github.com/ssojonn/)
 
-**Image license:** The images are only for demonstration purposes. They have their own license.
+**Design Source:** https://www.figma.com/community/file/1251189870352081006/My-Cloud-Dashboard-UI
